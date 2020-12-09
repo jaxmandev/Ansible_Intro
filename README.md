@@ -11,7 +11,7 @@ Two catagories of tools :
 2. Orchestration.
 
 
-### Configuration Management
+### Configuration Management
 ```
 1. They help configure and test machines to a specific state.
 
@@ -98,7 +98,7 @@ scp -i ~/.ssh/newpairaws.pem newpairaws.pem ubuntu@<ip-public>:~/
 - The security group needs allow an ssh in from any instance with the ansible controller security group.
 
 
-Connecting to hosts
+- Connecting to hosts
 
 1. ssh into the ansible controller instance
 2. cd to and edit the hosts file /etc/ansible/ so we can specify to connect to a host in it, using the private ip
