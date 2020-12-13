@@ -10,6 +10,12 @@ sudo apt install python -yes
 sudo apt install python-pip -yes
 sudo pip --upgrade pip -y
 
-# install other tools
-pip3 install awscli
-sudo pip install boto -yessudo pip install boto3 -y
+# install other aws tools
+pip3 install awscli # aws command line interface ----> allows us to
+pip3 install boto
+pip3 install boto3
+
+# get the uptime of this command
+ansible all -a uptime --become
+# update and upgrade packages
+ansible host_a -m apt -a "upgrade=yes update_cache=yes" --become
